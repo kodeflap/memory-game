@@ -4,23 +4,40 @@
     margin: 2px;
     box-sizing: border-box;
 }
-img
-{
-    display: block;
-}
 body
 {
     height: 100vh;
-    background-color: black;
+    background-image:url("../img/background.jpg");
     display: flex;
+}
+.timer
+{
+    display:inline-list-item;
+    border-radius: 30px;
+    padding: 5rem;
+    color: snow;
+}
+p
+{
+    background: orangered;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    height: 70px;
+    width: 200px;
+    justify-content: center;
+    margin: 0;
 }
 .memory-game
 {
-    width: 640px;
-    height: 640px;
+    width: 600px;
+    height: 500px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    perspective: 1000px;
 }
 .memory-card
 {
@@ -30,12 +47,13 @@ body
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
-    transition: .6s;
+    transition: transform .6s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,3);
 }
 .memory-card:active
 {
-    transform: scale(.97);
-    transition: .2s;
+    transform: scale(0.97);
+    transition: transform .2s;
 }
 .memory-card.flip
 {
@@ -47,12 +65,17 @@ body
 {
     width: 100%;
     height: 100%;
+    padding: 20px;
     border-radius: 5px;
-    background: gray;
+    background: blue;
     position: absolute;
     backface-visibility: hidden;
 }
 .front-face
 {
     transform: rotateY(180deg);
+}
+.back-face
+{
+    border-color: black;
 }

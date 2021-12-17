@@ -1,4 +1,26 @@
+/* -------------Timer --------------- */
+const startMin = 10;
+let time = startMin * 60;
+const count_down = document.getElementById('countdown');
+
+setInterval(updateCountDown,1000);
+
+function updateCountDown()
+{
+    const min = Math.floor(time/60);
+    let sec = time % 60;
+    sec = sec < 10 ? '0' + sec : sec;
+    count_down.innerHTML = `${min}:${sec}`;
+    time--;
+    if(time == 0 )
+    {
+        alert("Time out!!");
+    }
+}
+
+/*--------------memory card-----------*/
 const cards = document.querySelectorAll('.memory-card');
+
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard,secondCard;
@@ -39,7 +61,7 @@ function unFlipCards()
     setTimeout(() => {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
-    resetBoard()
+    resetBoard();
 }, 1500);
 
 }
@@ -60,4 +82,4 @@ function  resetBoard()
 })();
 
 cards.forEach(card =>
-card.addEventListener('click',flipCard))
+card.addEventListener('click',flipCard));
