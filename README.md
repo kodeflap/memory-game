@@ -1,4 +1,5 @@
-# memory-game
+# Christmas Memory
+
 A memory game application using html,css and javascript
 
 
@@ -7,6 +8,6 @@ A memory game application using html,css and javascript
 ![alt tag](https://github.com/poojaOfficial321/memory-game/blob/master/output/matching-cards-selection.PNG)
 ![alt tag](https://github.com/poojaOfficial321/memory-game/blob/master/output/timer-out.PNG)
 
-##License
+## License
 
 [MIT License](LICENSE)
