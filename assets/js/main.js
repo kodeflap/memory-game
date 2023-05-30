@@ -1,5 +1,10 @@
-/* -------------Timer --------------- */
-const startMin = 10;
+let hasFlippedCard = false;
+let lockBoard = false;
+let firstCard,secondCard;
+
+let win = false;
+
+const startMin = 1;
 let time = startMin * 60;
 const count_down = document.getElementById('countdown');
 
@@ -20,10 +25,6 @@ function updateCountDown()
 
 /*--------------memory card-----------*/
 const cards = document.querySelectorAll('.memory-card');
-
-let hasFlippedCard = false;
-let lockBoard = false;
-let firstCard,secondCard;
 
 function flipCard()
 {
