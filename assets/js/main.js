@@ -7,6 +7,8 @@ let win = false;
 const startMin = 1;
 let time = startMin * 60;
 const count_down = document.getElementById('countdown');
+let dialog = document.getElementById('scoreCard')
+let playAgain = document.getElementById('restart')
 
 setInterval(updateCountDown,1000);
 
