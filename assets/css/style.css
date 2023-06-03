@@ -104,10 +104,12 @@ p
     border: none;
     border-radius: 5px; 
     color: blue;
+    height: 50%;
+    width: 50%;
       
 }
 .is-hidden
 {
-    display: flex;
+    display: none;
 
 }
