@@ -108,6 +108,6 @@ p
 }
 .is-hidden
 {
-    display: flex;
+    display: none;
 
 }
